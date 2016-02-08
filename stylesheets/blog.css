@@ -1,0 +1,28 @@
+ol {	
+	position: absolute;
+	margin-top: 5em;
+	list-style-type: none;
+	font-size: 20px;
+}
+
+li {
+	margin-bottom: 5em;
+}
+
+.paragraphs {
+	margin-left: -25em;
+	font-size: 20px;
+}
+
+.related {
+	width: 3em;
+	height: 2em
+}
+
+.related2 {
+	height: 20px;
+}
+
+h5 ul li {
+	list-style-type: none;
+}

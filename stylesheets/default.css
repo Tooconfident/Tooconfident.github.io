@@ -1,0 +1,88 @@
+html {
+	background-color: #979aaa;
+	font-family: 'Roboto Condensed', Verdana, sans-serif;
+}
+
+
+.media {
+	display: inline-block;
+	position: relative;
+	height: 2px;
+	width: 2px;
+	right: 10px;
+	margin: 1em;
+}
+
+aside {
+	float:right;
+}
+
+aside a img {
+	height: 2em;
+	width: 2em;
+}
+
+.media:nth-child(2) {
+	position: absolute;
+    margin-top: 3em;
+    margin-right: 3.9em;
+}
+
+.media:nth-child(3) {
+	position: absolute;
+    margin-top: 3em;
+    margin-right: 1.5em;
+}
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	color: #000066;
+}
+
+#Mug {
+	height: 25em;
+	border-radius: 50%;
+	margin-top: -2em;
+}
+
+nav {
+	display: inline-block;
+	font-size: 20px;
+	position: absolute;
+}
+
+nav a {
+    margin: 4em;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #4c516d;
+}
+
+nav a:link {
+	color: #3d3d5c;
+}
+
+nav a:visited {
+	color: #f0f0f5;
+}
+
+#mission {
+	position: static;
+    text-align: center;
+    margin-top: -8em;
+    font-size: 25px;
+    color: #3d3d5c
+}
+
+p {
+	margin-left: 25em;
+	color: #3d3d5c
+}
+
+.video {
+	margin-top: 10em;
+	color: #3d3d5c
+}
