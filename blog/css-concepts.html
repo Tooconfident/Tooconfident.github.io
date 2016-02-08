@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tooconfident's 2nd Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+  <main>
+    <h1>Important Positioning CSS Skillz</h1>
+    <h2>A guide on the difference between margin, border, and padding</h2>
+    <h4>February 8th, 2016</h4>
+  
+    <section class="paragraphs">
+      <p>
+        <img src="https://s3.amazonaws.com/codecademy-blog/assets/ae09140c.png" alt="The Box Model">
+      </p>
+      <p>
+        Take a good look at the above image. This will help a lot in understanding what a margin, border and padding is in relation to a CSS element/object. First remember that every html element or tag is an object within CSS as well. These objects are positioned in a certain boring order unless CSS is used to move them around and make them look pretty! There are these three important elements inside every CSS object that will determine it's relationship and placement on the page as a whole. Whether a CSS object is just a paragraph with a bunch of text, a link, an image or an icon they all have a margin, border and padding. 
+      </p>
+      <p>
+        The first and more obvious element is the border. This is the edge of the content of the element. Depending on the properties you have given the object, the border will be visible using the command: object { border: 1px solid black }. The pixel size and color can be anything you want, and the solid value can change between a few different things like, dotted, dashed, double or none. There are a few more but the ones here are the most used.
+      </p>
+      <p>
+        The padding is the white space between the content of an object and it's border. Therefore if you increase the padding, it will do a couple things depending on the objects properties. It can expand the border outward or contract it inward and the object itself can get larger because it may share teh same background color as the content. Padding can be adjusted in different ways, you can adjust the top, right, bottom, and left side of an object's padding by using "padding-top" or "padding-right" etc. commands for the respective side you want to adjust. You can also adjust all four sides at once with different values with the command "padding: value value value value;" and it will adjust clockwise starting from the top.
+      </p>
+      <p>
+      Margin is similar to padding in how it is adjusted with CSS. Just replace "padding" with "margin" and the commands act the same. I find that margin is used more than the other two elements as well because the difference is that a margin is the space outside the border of the CSS element and is relative to all the other elements on the page. Also you cannot adjust the color of a margin like you can with padding.
+      </p>
+      <p>
+        I hope this basic tutorial on CSS positioning helps you in understanding the different of these three elements. I have included a couple links below that can help you delve further into CSS positioning. The last little thing I will reference on the image above are the abreviations within the edges. You will see TM, TB, and TP, stand for "Top-Margin" "Top-Border" and "Top-Padding". These abbreviations apply for RIGHT, LEFT and BOTTOM as well, and they can all be adjusted individually without effecting the entire, edge if you don't want to. I found when learning about these elements that it just takes a lot of trial and error (like most CSS) to figure out what values best fit your page. Keep playing with them and eventually you will find what looks best! 
+      </p>
+  
+    </section>
+
+    <section class="links">
+      <h3>Related Links</h3>
+        <h5>
+          <ul>
+            <li><a href="https://www.codecademy.com/courses/web-beginner-en-6merh/0/1?curriculum_id=50579fb998b470000202dc8b">
+              <img src="http://www.mysuggestionis.com/wp-content/uploads/2014/07/code.png" alt="CodeAcademy"></a></li>
+              <li><a href="http://www.w3schools.com/css/css_positioning.asp"><img src="http://cdn.impressivewebs.com/2014-02/w3schools-logo.jpg" alt="w3schools.com"></a></li>
+          </ul>
+        </h5>
+    </section>
+
+  </main>
+</body>
+</html>>
