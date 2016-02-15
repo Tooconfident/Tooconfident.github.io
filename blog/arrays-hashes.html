@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arrays vs. Hashes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+  <main>
+    <h1>Arrays vs. Hashes</h1>
+    <h2>How Ruby Contains Lists of Values</h2>
+    <h4>February 15th, 2016</h4>
+  
+    <section class="paragraphs">
+      <p>
+        Ruby has two different containers of data that are called upon regularly and these are arrays and hashes. Both of them can be described as indexed collections with a key and corresponding value, however they each act a little differently as we will see below.
+      </p>
+      <p>
+        Arrays are an ordered list where each value inside is called upon with a corresponding key that is a numbered index position. The array is displayed in ruby as a list of things, inside a bracket, each value seperated by a comma like so: "array_list = [value1, value2, value3]". The corresponding indexed position begins with 0, so "value1" is actually in the 0 position and not the 1 position. So if you wanted to target just the first value (value1) you would type in "array_list[0]" and then add 1 for the next corresponding position. So then 0 is the array key for "value1". When I say a list of things, the things can be mostly any ruby value such as a string, an integer, a float or even another array.
+      </p>
+      <p>
+        It can be argued that it is more efficient to use arrays over hashes for the most part but not when you want a little more flexibility with your keys. A hash is displayed very similarly to an array but instead of brackets we use those fancy little curly bracers { }. Also unique to hashes is that the key is actually found inside the bracers along with their corresponding values like so: "basic_hash = {"Name" => "Ryan", "Location" => "California", "Age" => "Nice try"}. So here we see hashes have unique keys defined with unique corresponding values. Once the key is defined, you just have to call upon it's value using the unique corresponding key like you did with arrays using index positions: 'basic_hash["Location"] => "California"' <!-- I am going to do a better blog on this topic in the near future when my time is managed better-->
+      </p>
+  
+    </section>
+
+    <section class="links">
+      <h3>Related Links</h3>
+        <h5>
+          <ul>
+            <li><a href="http://http//ruby-doc.org/core-2.2.0/Array.html">
+              <img class="related" src="#" alt="Ruby Array"></a></li>
+              <li><a href="http://ruby-doc.org/core-2.2.0/Hash.html"><img class="related2" src="#" alt="Ruby Hash"></a></li>
+          </ul>
+        </h5>
+    </section>
+
+  </main>
+</body>
+
+  
+Status API Training Shop Blog About Pricing
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help
