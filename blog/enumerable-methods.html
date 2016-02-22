@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enumerable Grouping</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+  <main>
+    <h1>Grouping Object</h1>
+    <h2>When arrays and hashes work together!</h2>
+    <h4>February 21st, 2016</h4>
+  
+    <section class="paragraphs">
+      <p>
+        In my previous post I talked about the ruby classes Array and Hashes, and how they relate to one another. We figured out which class works best for which situation and we looked at different ways to loops through them to better create methods that solve the problem we're trying to use ruby for. In addition to classes, ruby has modules, which also contain methods and constants. Think of a module as one parent of a class. This means that classes will inherit all the methods (built-in or not) of their parent. One such module whose methods you use constantly is called Enumerable. The Enumerable module, contains most of the methods we use to iterate through classes like Array and Hashes. I'm going to focus on the Enumerable method #group_by because it's an interesting iteration method that actually returns a value that contains both Arrays and Hashes! Arrays and Hashes working together? Who knew! Actually it's pretty good practice using them together to accomplish the same goals, #group_by is just one of the many examples of this.
+      </p>
+      <p>
+        Simply put, #group_by breaks a collection into groups based on the given criteria and returns a hash. Remember how a hash has both a unique key and value pair? Well the hash that is returned actually has an array as its value. This array of elements should be members of the original collection that correspond with the key group. SO, let's start simple and just say we have a list of numbers and we want to group them using modulus (%):
+      </p>
+      <p>
+        <code>
+          (0..25).group_by {|number| number % 3}<br>
+          => {0=>[0, 3, 6, 9, 12, 15, 18, 21, 24], 1=>[1, 4, 7, 10, 13, 16, 19, 22, 25], 2=>[2, 5, 8, 11, 14, 17, 20, 23]}<br>
+        </code>
+      </p>
+      <p>
+        Here we get three groups. The first group with key 0 has all the corresponding numbers within the range of 0 to 25 that are evenly divisible by the number 3 with no remainder. Key 1 has all the numbers that when we divide by three there is a remainder of 1 and key 2 has a remainder of 2. Therefore using this example the keys are equal to the remainder and the value is the group of numbers that correspond to the modulus remainders. (More examples and styling to come...) <!-- FINISH THIS WEEK -->
+      </p>
+  
+    </section>
+
+    <section class="links">
+      <h3>Related Links</h3>
+        <h5>
+          <ul>
+            <li><a href="http://ruby-doc.org/core-2.2.1/Enumerable.html#method-i-group_by"><img class="related3" src="https://avatars2.githubusercontent.com/u/210414?v=3&s=400" alt="Ruby Docs"></a></li>
+            <li><a href="#"><img class="related2" src="#" alt="Second Link"></a></li>
+          </ul>
+        </h5>
+    </section>
+
+  </main>
+</body>
+
+  
+Status API Training Shop Blog About Pricing
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help

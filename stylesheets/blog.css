@@ -26,3 +26,8 @@ li {
 h5 ul li {
 	list-style-type: none;
 }
+
+.related3 {
+	width: 5em;
+	height: 5em
+}
