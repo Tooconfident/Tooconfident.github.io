@@ -22,28 +22,71 @@
       </p>
         <pre class="code">
         <code>
-            Class FamilyTree 
-              def initialize(Stark)
-                @name = nil
-                @age = nil
-                @title = nil
+            class StarkFamily 
+              def initialize(name, age, title)
+                @name = name
+                @age = age
+                @title = title
               end
             end
         </code>
         </pre>
       <p>
-        So above we have identified a Class "FamilyTree". Every class begins with this initialize stage(method), the starting 'instance' of the Class. This method shows three instance variables that are meant to identify the attributes of a member of the <a href="http://www.hbo.com/game-of-thrones" alt="GoT">Stark</a> family. Instance variables are like local variables except instead of only being accessible within the method they are created(local variables), they can be accessed within an instance of a class. This allows instance methods to be able to use the same variables and communicate with each other.
+        So above we have identified a Class "StarkFamily". Every class begins with this initialize stage(method), the starting 'instance' of the Class. This method shows three instance variables that are meant to identify the attributes of a member of the <a href="http://www.hbo.com/game-of-thrones" alt="GoT">Stark</a> family. Instance variables are like local variables except instead of only being accessible within the method they are created(local variables), they can be accessed within an instance of a class. This allows instance methods to be able to use the same variables and communicate with each other. The way you identify an instance variable is when it has the <code>'@'</code> symbol before it. If we can determine that instance variables are used anywhere within the class they are defined, then we can then say the same for instance methods.
       </p>
-  
+      <p>
+        OK, so say we want to use this StarkFamily tree Class to identify different members of the Starks and keep a log of whose who. Well those instance variables are a start and we're going to use them to add members of the family to keep track of. First we start with defining basic instance methods to keep track of three attributes.
+      </p>
+      <pre class="code">
+        <code>
+          class StarkFamily
+            def initialize(name, age, title)
+              @name = name
+              @age = age
+              @title = title
+            end
+          
+            def name
+              @name
+            end
+
+            def age
+              @age
+            end
+
+            def title
+              @title
+            end
+          end
+        </code>
+      </pre>
+      <p>
+      Ok wait, this is already getting really repetetive, but unfortunately we do have to define what these instance variables are to continue to use them throughout the class and to be able to call on them outside the instances of the class. Well we're in luck because within Ruby, like most programming languages, there is usually a simpler and cleaner way to do something. I give you the <code>attr_</code> attribute and it looks something like this.
+      </p>
+      <pre class="code">
+      <code>
+      class StarkFamily
+
+        attr_reader :name, :age, :title
+
+          def initialize(name, age, title)
+            @name = name
+            @age = age
+            @title = title
+          end
+      end</code>
+      </pre>
+      <p>To Be Continued...</p>
+      <p> WINTER IS COMING </p>
     </section>
 
     <section class="links">
       <h3>Related Links</h3>
         <h5>
           <ul>
-            <li><a href="#">
-              <img class="related" src="#" alt="#"></a></li>
-              <li><a href="#"><img class="related2" src="#" alt="#"></a></li>
+            <li><a href="http://www.hbo.com/game-of-thrones">
+              <img id="GoT" src="http://orig05.deviantart.net/c1b2/f/2014/044/5/e/game_of_thrones___winter_is_coming___ico__by_annyiss99-d76a8yr.png" alt="Game Of Thrones"></a></li>
+              <li><a href="http://ruby-doc.org/core-2.2.0/Class.html"><img class="related3" src="https://avatars2.githubusercontent.com/u/210414?v=3&s=400" alt="Ruby Class"></a></li>
           </ul>
         </h5>
     </section>
