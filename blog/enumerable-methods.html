@@ -20,12 +20,12 @@
       <p>
         Simply put, #group_by breaks a collection into groups based on the given criteria and returns a hash. Remember how a hash has both a unique key and value pair? Well the hash that is returned actually has an array as its value. This array of elements should be members of the original collection that correspond with the key group. SO, let's start simple and just say we have a list of numbers and we want to group them using modulus (%):
       </p>
-      <p>
+      <pre class="code">
         <code>
           (0..25).group_by {|number| number % 3}<br>
           => {0=>[0, 3, 6, 9, 12, 15, 18, 21, 24], 1=>[1, 4, 7, 10, 13, 16, 19, 22, 25], 2=>[2, 5, 8, 11, 14, 17, 20, 23]}<br>
         </code>
-      </p>
+      </pre>
       <p>
         Here we get three groups. The first group with key 0 has all the corresponding numbers within the range of 0 to 25 that are evenly divisible by the number 3 with no remainder. Key 1 has all the numbers that when we divide by three there is a remainder of 1 and key 2 has a remainder of 2. Therefore using this example the keys are equal to the remainder and the value is the group of numbers that correspond to the modulus remainders. (More examples and styling to come...) <!-- FINISH THIS WEEK -->
       </p>
