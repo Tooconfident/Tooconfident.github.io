@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruby Classes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+  <main>
+    <h1>Ruby Classes</h1>
+    <h2>A Dive into the Blueprint of Ruby Objects</h2>
+    <h4>February 28th, 2016</h4>
+  
+    <section class="paragraphs">
+      <p>
+        This week Dev Bootcamp put us through the Ruby-ringer(#coin_phrase)! We went way deeper into the language with particular focus on Classes. I mentioned a couple weeks ago about Arrays and Hashes and how they are classes.  Well this week we're going a little deeper on exactly what a class is, and how we can create one of our own! I feel Classes are one of the things that really show off what Ruby can do. I'm sure you've had some people talk to you and teach you some basic html elements and some intructors enjoy describing the html language as having a "tree-like" structure. Well we can look at Ruby in a very similar way not just in how it's structured with syntax but with how the objects inside actually communicate with each other. 
+      </p>
+      <p>
+        A Class is a blueprint that contains objects inside it. As everything in the Ruby language is an object, this is pretty vague, but bare with me. We know about methods and variables in Ruby already, so if a Class contains these, think of the Class as a parent, and the objects, its children. Now that I think of it, sticking with the idea of a tree and family, let's actually use a 'Family Tree' as a fun example of how Ruby Classes work.
+      </p>
+        <pre class="code">
+        <code>
+            Class FamilyTree 
+              def initialize(Stark)
+                @name = nil
+                @age = nil
+                @title = nil
+              end
+            end
+        </code>
+        </pre>
+      <p>
+        So above we have identified a Class "FamilyTree". Every class begins with this initialize stage(method), the starting 'instance' of the Class. This method shows three instance variables that are meant to identify the attributes of a member of the <a href="http://www.hbo.com/game-of-thrones" alt="GoT">Stark</a> family. Instance variables are like local variables except instead of only being accessible within the method they are created(local variables), they can be accessed within an instance of a class. This allows instance methods to be able to use the same variables and communicate with each other.
+      </p>
+  
+    </section>
+
+    <section class="links">
+      <h3>Related Links</h3>
+        <h5>
+          <ul>
+            <li><a href="#">
+              <img class="related" src="#" alt="#"></a></li>
+              <li><a href="#"><img class="related2" src="#" alt="#"></a></li>
+          </ul>
+        </h5>
+    </section>
+
+  </main>
+</body>
+
+  
+Status API Training Shop Blog About Pricing
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help
+
+</html>
