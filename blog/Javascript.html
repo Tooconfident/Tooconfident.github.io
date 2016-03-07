@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruby vs. JavaScript</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+  <main>
+    <h1>Object Literals</h1>
+    <h2>Ruby Hashes vs. JavaScript Objects</h2>
+    <h4>March 3rd, 2016</h4>
+  
+    <section class="paragraphs">
+      <p>
+        So after 4 weeks of getting close to Ruby, I miss her oh so much. It was a relationship that grew quick with emotional struggle. At first there were times when I thought it wasn't going to work out, but then when I started to really get to know Ruby, she showed me all the wonderful things she could do. As soon as I got comfortable with her and began to think of all the possiblities of our future together, Ruby was taken away from me and JavaScript showed up. I'm still blogging about programming languages, don't worry. Sorry if that made you uncomfortable, but it's true. Ruby has so many built-in abilities, like methods that really make it a beautiful language. Programmers talk about "Syntactic Sugar", which to me is just a romantic way of saying readability, and Ruby has that. JavaScript has many differences from Ruby that make it less readable, and as a result, harder to get a long with. 
+      </p>
+      <p>
+        So begins my new relationship with JavaScript. It was a struggle this week learning another language after getting used to the first, but then I remind myself of how hard it was with Ruby in the beginning. So I stopped looking at what makes JavaScript different in a negative way, and started to focus on how JavaScript is similar. One aspect of Ruby that was hard for me to master was the <code>Hash</code>. An <code>Array</code> was pretty straight forward as a collection of objects, but using a <code>Hash</code> as a collection took me some time. That was why one difference that kind of made me happy to see in JavaScript is that there isn't really a data type just like Ruby's <code>Hash</code>. But you see I worked so hard to understand a <code>Hash</code> and how to use it, iterate through it and manipulate it, that I kind of missed it. So after some further research I found that JavaScript actually has something that can be used in a similar fashion. I give you JavaScript's own <a href="https://developer.mozilla.org/en/JavaScript/Guide/Values,_Variables,_and_Literals#Object_literals">object literals</a>.
+      </p>
+      <p>
+        The definition os an object literal is "a list of zero or more pairs of property names and associated values of an object, enclosed in curly braces ({})." Yup, sounds like a <code>Hash</code>, but let's delve a little deeper to actually visually see the difference in how object literals behave compared to a <code>Hash</code>. First let's create a <code>Hash</code>:
+      </p>
+      <pre class="code">
+        <code>
+            meals = {breakfast: "eggs", lunch: "sandwich", dinner: "pasta"}
+        </code>
+      </pre>
+      <p>
+          Now let's look at a JavaScript object literal:
+      </p>
+      <pre class="code">
+        <code>
+            var meals = {breakfast: "eggs", lunch: "sandwich", dinner: "pasta"};
+        </code>
+      </pre>
+      <p>
+        These seem pretty much identical besides some minor syntax differences. We have a Ruby Hash <code>meals</code> that has keys and their corresponding values. What we have in JavaScript is something different. We defined an object <code>meals</code> that has properties. The properties of the object are variables themselves, making them a little more limited as data types. Another interesting difference is how we access these properties in JavaScript vs. how we access the values of a Hash key in Ruby.
+         <pre class="code">
+        <code>
+            # Using Ruby
+            meals[:lunch]
+            => "sandwich"
+
+            // JavaScript
+            meals.lunch;
+            => sandwich
+        </code>
+      </pre>
+      <p>
+        Believe it or not, we actually could have used bracket notation for the JavaScript object as well. In our example abouve we could have called the <code>lunch</code> property by typing <code>meals["lunch"]</code>, but that is only because we called it as a string, <code>meals[lunch]</code> in JavaScript would return an error. Dot notation is more common and easily readable, but bracket notation allows us to access properties containing special characters such as <code>[]</code>.
+      <p>
+        There's a lot more similarities between Ruby Hashes and JavaScript objects and between the laguages in general that really prove to me that one language is not necessarily better than the other. At this point I still prefer Ruby, but I believe that is solely based on familiarity. Once I take what I have learned from Ruby and find similarities in JavaScript, and see all the fun things it can do with web developement, I'm sure I will begin to find aspects of JS that I love just as much. Oops, I just called it JS, I think I'm bonding to it already. 
+    </section>
+
+    <section class="links">
+      <h3>Related Links</h3>
+        <h5>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en/JavaScript/Guide/Values,_Variables,_and_Literals#Object_literals">
+              <img class="related" src="http://www.emarketeers.com/e-insight/wp-content/uploads/2014/09/mdn-logo.png" alt="MDN"></a></li>
+          </ul>
+        </h5>
+    </section>
+
+  </main>
+</body>
+
+</html>
