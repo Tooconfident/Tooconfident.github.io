@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test-Driven Development</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+  <main>
+    <h1>Debugging with Test Codes</h1>
+    <h2>An introduction to Test-Driven Development</h2>
+    <h4>March 12th, 2016</h4>
+  
+    <section class="paragraphs">
+      <p>
+        "If debugging is the process of removing bugs, then programming must be the process of putting them in." -
+        Edsger W. Dijkstra
+      </p>
+      <p>
+        Some of you may be familiar with this quote. As you begin to delve deeper into the world of programming, you are bound to run into it. It's funny and pretty close to the truth. There is however, one form of coding dedicated to catching bugs right when they are put in before they are committed and this is Test-Driven Development. The <span class="tech"><a href="https://en.wikipedia.org/wiki/Test-driven_development">Wikipedia</a></span> definition for Test-driven development(TDD) is "a software development process that relies on the repetition of a very short development cycle: first the developer writes an (initially failing) automated test case that defines a desired improvement or new function, then produces the minimum amount of code to pass that test, and finally refactors the new code to acceptable standards." So basically we develope a test for our code initially before the actual code is developed in order to build an expectation of what we want our code to meet. Once the expectation or test code is built we can move onto our actual program and test as we code. Usually the test code initially fails because <span class="tech"><a href="https://en.wikiquote.org/wiki/Edsger_W._Dijkstra">"Testing can only prove the presence of bugs, not their absence."</a></span>Once the code passes the test the test code gets out of the way and lets the actual program do what is expected. 
+      <p>
+        The basic TDD cycle is:<br>
+        <br>
+        1. Add a test<br>
+        2. Run all tests and see if the new one fails<br>
+        3. Write some code<br>
+        4. Run tests<br>
+        5. Refactor code to fit tests<br>
+        6. Repeat process for each new test<br>
+      </p>
+      <p>
+        The most popular testing framework in Ruby is called RSpec, and for JavaScript, it is called Jasmine. It is also an expectation in the real world that you will be able to create your own test code with things like <code>assert</code> statements for Ruby, but this doesn't really fall into TDD because you are creating tests after your actual program code has been created.
+    </section>
+
+    <section class="links">
+      <h3>Related Links</h3>
+        <h5>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Test-driven_development"><img class="wiki" src="http://4.bp.blogspot.com/_7yB-eeGviiI/TUWb3cVP-eI/AAAAAAAAIKM/LdJw8FMLxl4/s1600/Wikipedia_Logo24.png" alt="Wiki TDD"></a></li>
+              <li><a href="http://rspec.info/"><img class="RSpec" src="http://rspec.info/images/logo.png" alt="RSpec"></a></li>
+          </ul>
+        </h5>
+    </section>
+
+  </main>
+</body>
+
+</html>
