@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/cheat-sheet.css">
+  <title>CSS Positioning Cheat Sheet</title>
+</head>
+<body>
+	<header><h1>CSS Positioning</h1></header>
+	<div class="img">
+		<img src="https://s3.amazonaws.com/codecademy-blog/assets/ae09140c.png" alt="Box Model"> 
+	</div>
+	<article class="left">
+		<h2 class="flow">position:static</h2>
+			<p class="flow_definition">Default position. Elements fall in the normal flow of the page.</p>
+		<h2 class="flow">position:fixed**</h2>
+			<p class="flow_definition">Ignores scrolling. Taken out of flow of page. Elements positioned in relation to the browser.</p>
+		<h2 class="flow">position:absolute**</h2>
+			<p class="flow_definition">Parent must be fixed, absolute, or relative. Taken out of flow of page. Elements positioned in relation to its parent element.</p>
+		<h2 class="flow">position:relative**</h2>
+			<p class="flow_definition">Used often. Great companion to absolute. Looks where element would have been and shifts it from original spot, but reserves the original space.</p>
+			<p>**set with top/left/bottom/right</p>
+	</article>
+	<article class="right">
+		<h2 class="elements">Inline elements</h2>
+			<h3 class="uses">Use: margin-left, margin-right, padding</h3>
+			<h4 class="tags">Found inside content: span, em, strong, etc.</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span class="lorem">nostrud exercitation ullamco</span> laboris nisi ut aliquip ex ea commodo consequat. </p>
+		<h2 class="elements">Block elements</h2>
+			<h3 class="uses">Use: margin, padding</h3>
+			<h4 class="tags">Live on their own lines: div, p, h1, etc.</h4>
+			<p id="block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+		<h2 class="elements">Float</h2>
+			<h3 class="uses">Pulls element out of flow of page and moves it as far right or left as possible</h3>
+			<h4 class="tags">Great for columns, or wrapping text around image. Text will go around objects with float property.</h4>		
+	</article>
+</body>
+</html>
