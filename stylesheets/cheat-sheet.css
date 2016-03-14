@@ -1,0 +1,45 @@
+body {
+	/*width: 50%;*/
+	margin: auto;
+	padding: 0;
+}
+
+header {
+	/*position: relative;*/
+	background-color: red;
+	text-align: center;
+}
+
+.img {
+	background-color: blue;
+}
+
+img {
+	/*position:relative;*/
+}
+
+article {
+	display: block;
+}
+
+.left {
+	float: left;
+	width: 50%;
+	/*position: relative;*/
+	background-color: purple;
+}
+
+.right {
+	float: right;
+	width: 50%;
+	/*position: relative;*/
+	background-color: green;
+}
+
+.lorem {
+	background-color: yellow;
+}
+
+#block {
+	border: 1px solid yellow;
+}
