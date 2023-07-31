@@ -1,8 +1,26 @@
-html {
-	background-color: #979aaa;
-	font-family: 'Roboto Condensed', Verdana, sans-serif;
-}
+html {height: 100%}
+	body,td,th,h1 {
+		color: #a4a4a4;
+		font-size: 1.2em;
+	}
+	body {
+	font-family: 'Montserrat', sans-serif;
+	background: #27323b;
 
+	}
+	a{ color:#FFF; text-decoration:none;}
+	a:hover{ color:#CCC;}
+	strong {font-weight: 600;}
+
+	.basic-block {
+		max-width: 650px;
+		text-align: left;
+		padding: 5px;
+		line-height: 1.4em;
+	}
+	.code {
+		font-family: monospace;
+	}
 
 .media {
 	display: inline-block;
@@ -35,9 +53,7 @@ aside a img {
 }
 
 h1 {
-	text-align: center;
 	font-size: 50px;
-	color: #000066;
 }
 
 #Mug {
